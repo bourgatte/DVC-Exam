@@ -14,7 +14,7 @@ def main():
 
     df = pd.read_csv(RAW_PATH)
 
-    X = df.drop(columns=["silica_concentrate"])
+    X = df.drop(columns=["date","silica_concentrate"])
     y = df["silica_concentrate"]
 
     X_train, X_test, y_train, y_test = train_test_split(
