@@ -3,9 +3,9 @@ split:
   random_state: 0
 
 gridsearch:
-  cv: 5
+  cv: 3
   scoring: neg_mean_squared_error
   param_grid:
-    n_estimators: [20,50,100, 200, 300,400,500]
-    max_depth: [2, 3, 5, 7, 9]
-    learning_rate: [0.001, 0.01, 0.05, 0.1, 0.5]
+    n_estimators: [20,50,100, 200, 300]
+    max_depth: [2, 3, 5, 7]
+    learning_rate: [0.001, 0.01, 0.05, 0.1]

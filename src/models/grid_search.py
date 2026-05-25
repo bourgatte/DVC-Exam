@@ -26,7 +26,6 @@ def main():
         cv=params["cv"],
         scoring=params["scoring"],
         n_jobs=-1,
-        verbose=2,
     )
     grid.fit(X_train, y_train)
 
